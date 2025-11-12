@@ -1,0 +1,76 @@
+class Manger
+{
+	
+	protected int employeeId;
+	protected String employeeName;
+	protected double employeeSalary;
+	
+	
+	
+	
+	public Manger(int employeeId, String employeeName, double employeeSalary) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeSalary = employeeSalary;
+	}
+}
+
+	class Developer extends Employee
+	{
+		protected String designation;
+		
+
+		public Developer(int employeeId, String employeeName, double employeeSalary, String designation) {
+			super(employeeId, employeeName, employeeSalary);
+			this.designation = designation;
+		}
+
+
+		@Override
+		public String toString() {
+			return "Developer [designation=" + designation + ", employeeId=" + employeeId + ", employeeName="
+					+ employeeName + ", employeeSalary=" + employeeSalary + "]";
+		}
+
+
+		
+		}
+	
+		class Designer extends Developer
+		{
+			
+			protected String designation;
+
+			public Designer(int employeeId, String employeeName, double employeeSalary, String designation,
+					String designation2) {
+				super(employeeId, employeeName, employeeSalary, designation);
+				designation = designation2;
+			}
+
+			@Override
+			public String toString() {
+				return "Designer [employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeSalary="
+						+ employeeSalary + ", designation=" + designation + "]";
+			}
+
+			
+		}
+public class hierarchicalDemo {
+
+	public static void main(String[] args) {
+		
+		Developer D=new Developer(23, "vinod", 3000, "program");
+		System.out.println(D);
+		
+		System.out.println("===================================");
+		
+		Designer d=new Designer(12, "vinod", 20000, "program", "TI");
+		System.out.println(d);
+
+		
+		
+		
+	}
+
+}
