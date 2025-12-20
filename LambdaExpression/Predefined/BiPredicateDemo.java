@@ -1,6 +1,6 @@
 package LambdaExpression.Predefined;
 
-//import java.util.function.BiPredicate;
+
 
 
     interface BiPredicate<T,U>
