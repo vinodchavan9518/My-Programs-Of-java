@@ -1,7 +1,6 @@
 package ExecptionHandling;
 
 public class ExecptionMultipleOverriding {
-    
 	public static void main(String[] args) {
 		String str = IO.readln("Enter a class name : ");
 	    ParentClass pr = new ChildClass();
