@@ -1,7 +1,7 @@
 package Collection_Framerwork.Set_Collection;
 
 import java.util.LinkedHashSet;
-
+//find the insertion order using linkedHashSet
 public class LinkedSetDemo1 {
     public static void main(String[] args) {
         LinkedHashSet<Integer> linked=new LinkedHashSet<>();
