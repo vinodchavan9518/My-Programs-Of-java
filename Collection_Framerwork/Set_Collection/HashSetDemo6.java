@@ -15,7 +15,7 @@ public class HashSetDemo6 {
 		hs.add(null);
 		
 		hs.forEach(str -> System.out.println(str));
-				
+			IO.println("Size of HashSet: "+hs.size());	
 		
     }
     
